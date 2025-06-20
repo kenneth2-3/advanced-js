@@ -1,0 +1,15 @@
+// No Spread Operator
+
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+arr2.push(4); //to push the number four into the list of array
+console.log("second array:", arr2);
+console.log("first array:", arr1);
+
+// Copying an array (use of spread operator)
+let arr3 = [4, 5, 6]; // this is done so that when the first array is called it wont bring out the same changes as the second array
+let arr4 = [...arr3];
+
+arr4.push(7);
+console.log("third array:", arr3);
+console.log("fourth array:", arr4);
