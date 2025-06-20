@@ -13,3 +13,17 @@ let arr4 = [...arr3];
 arr4.push(7);
 console.log("third array:", arr3);
 console.log("fourth array:", arr4);
+
+// Copying An Object
+
+let obj1 = { a: 1, b: 2, c: 3 };
+let obj2 = { ...obj1, d: 4 };
+let obj3 = { ...obj1, b: 5 };
+console.log("first object:", obj1);
+console.log("second object:", obj2); 
+console.log("third object", obj3);
+
+// Copying Only Part Of An Array/Object
+
+let arr5 = [...arr1, {...obj1}, ...arr3, "x", "y", "z"];
+console.log(arr5);
